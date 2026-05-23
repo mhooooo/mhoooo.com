@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#services", label: "Work" },
+  { href: "#services", label: "Products" },
   { href: "#demos", label: "Demos" },
   { href: "#how-it-works", label: "Method" },
-  { href: "#why-mhoooo", label: "Proof" },
+  { href: "#why-mhoooo", label: "Possibilities" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -20,7 +20,7 @@ export function Header() {
         <a href="#" className="flex flex-col leading-none text-ink">
           <span className="text-xl font-black">mhoooo</span>
           <span className="mt-1 text-[0.68rem] font-semibold text-rust">
-            AI systems studio
+            Second Brain systems
           </span>
         </a>
 

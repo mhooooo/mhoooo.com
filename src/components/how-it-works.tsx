@@ -1,21 +1,21 @@
 const steps = [
   {
     number: "01",
-    title: "Pick one workflow",
+    title: "เลือก workflow แรก",
     description:
-      "Bring one repetitive customer or operations task. We map the input, decision, approval boundary, and output.",
+      "เริ่มจากงานที่เสียเวลาหรือทำให้เสียลูกค้า เช่น ตอบแชท เก็บ lead เช็ก stock ทำ report หรือ follow-up",
   },
   {
     number: "02",
-    title: "Build the demo",
+    title: "ทำ demo ให้เห็นก่อน",
     description:
-      "We create a working prototype and record the screen so you can see the workflow before paying for a full install.",
+      "สร้าง flow ที่ใช้งานได้จริงและอัดหน้าจอให้ดูว่า AI ตัดสินใจตรงไหน คนต้องอนุมัติตรงไหน",
   },
   {
     number: "03",
-    title: "Install and maintain",
+    title: "ติดตั้ง แล้วค่อยขยาย",
     description:
-      "If the demo proves useful, we connect real accounts, add guardrails, train the operator, and keep the system running.",
+      "ถ้าเดโมคุ้ม เราเชื่อมบัญชีจริง ใส่ guardrail เทรนคนใช้ เก็บ memory และเพิ่ม product ใหม่ตามงานจริง",
   },
 ];
 
@@ -27,12 +27,12 @@ export function HowItWorks() {
           <div>
             <p className="eyebrow text-work-green">Method</p>
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
-              A boring path from idea to useful system.
+              เริ่มเล็ก แต่ต้องวางฐานให้โตได้
             </h2>
           </div>
           <p className="text-lg leading-8 text-ink/68">
-            The demo sprint protects the customer from buying theory and
-            protects us from building software nobody uses.
+            เป้าหมายไม่ใช่ทำระบบใหญ่ตั้งแต่วันแรก เป้าหมายคือ workflow แรกที่
+            พิสูจน์ได้ แล้วต่อให้กลายเป็น Second Brain ของธุรกิจ
           </p>
         </div>
 

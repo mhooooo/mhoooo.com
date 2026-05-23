@@ -15,17 +15,18 @@ export function Hero() {
 
       <div className="section-shell relative flex min-h-[74vh] items-center pt-20 md:min-h-[82vh] md:pt-24">
         <div className="max-w-3xl py-16">
-          <p className="eyebrow text-rust">Bangkok AI systems studio</p>
+          <p className="eyebrow text-rust">Second Brain systems studio</p>
           <h1 className="mt-5 text-6xl font-black leading-none md:text-8xl">
             mhoooo
           </h1>
           <p className="mt-8 max-w-2xl text-3xl font-bold leading-tight md:text-5xl">
-            Boring AI systems for real customer work.
+            ทุก product ควรมีสมองของตัวเอง
           </p>
           <p className="mt-7 max-w-xl text-lg leading-8 text-porcelain/76">
-            We build practical automations for Thai businesses: lead response,
-            follow-up, document handling, operating dashboards, and recorded
-            demos that show the workflow before you buy it.
+            mhoooo สร้าง AI systems ที่เริ่มจาก workflow จริง แล้วสะสมความจำของ
+            ลูกค้า งาน และการตัดสินใจไว้ใน Second Brain เดียว LINE chat system
+            คือ product แรก ไม่ใช่กรอบของบริษัท ฐานเดียวกันต่อยอดได้ไม่จำกัด:
+            operations, social, studio, BI และ custom tools
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">
@@ -33,25 +34,25 @@ export function Hero() {
               href="#demos"
               className="rounded-md bg-porcelain px-6 py-3 text-center text-sm font-black text-ink transition-colors hover:bg-[#f0bf7a]"
             >
-              See the demo queue
+              ดูเดโม product แรก
             </a>
             <a
               href="#contact"
               className="rounded-md border border-porcelain/35 px-6 py-3 text-center text-sm font-bold text-porcelain transition-colors hover:border-porcelain hover:bg-porcelain/10"
             >
-              Send one workflow
+              ส่ง workflow ที่อยากสร้าง
             </a>
           </div>
 
           <div className="mt-12 hidden max-w-2xl gap-3 text-sm text-porcelain/72 sm:grid sm:grid-cols-3">
             <div className="border-l border-rust pl-4">
-              Fastwork demo sprint
+              Memory in every product
             </div>
             <div className="border-l border-work-green pl-4">
-              Human approval gates
+              Human approval by design
             </div>
             <div className="border-l border-harbor pl-4">
-              Maintained after install
+              No ceiling upgrade path
             </div>
           </div>
         </div>

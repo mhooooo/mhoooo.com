@@ -20,7 +20,7 @@ export function About() {
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
               Tanyawit &ldquo;Moo&rdquo; Nilnavarat
             </h2>
-            <p className="mt-2 text-lg font-bold text-harbor">มู ทำให้</p>
+            <p className="mt-2 text-lg font-bold text-harbor">หมู ทำให้</p>
 
             <div className="mt-8 space-y-4 text-lg leading-8 text-ink/68">
               <p>
@@ -30,8 +30,9 @@ export function About() {
               </p>
               <p>
                 I believe one person plus AI can deliver what used to take a
-                team of ten. I&apos;m proving it with mhoooo and then building
-                the same capability for your business.
+                team of ten. mhoooo builds practical products with a Second
+                Brain inside, so every system can help the business remember,
+                decide, create, and keep expanding.
               </p>
               <p>
                 I don&apos;t sell advice. I don&apos;t hand you a PDF and
@@ -41,7 +42,7 @@ export function About() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3">
-              {["AI systems", "Thai SMEs", "Automation", "Demo-first"].map(
+              {["Second Brain", "AI products", "Thai SMEs", "Demo-first"].map(
                 (tag) => (
                   <span
                     key={tag}

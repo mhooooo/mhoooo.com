@@ -6,7 +6,7 @@ export function Footer() {
           <div>
             <span className="text-lg font-black text-ink">mhoooo</span>
             <p className="mt-1 text-sm font-medium text-ink/50">
-              Boring AI systems for real customer work.
+              Second Brain systems for real business work.
             </p>
           </div>
 
@@ -15,7 +15,7 @@ export function Footer() {
               href="#services"
               className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
             >
-              Work
+              Products
             </a>
             <a
               href="#demos"

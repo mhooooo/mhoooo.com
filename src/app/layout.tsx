@@ -13,34 +13,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "mhoooo - Boring AI systems for real customer work",
+  title: "mhoooo - Second Brain systems สำหรับธุรกิจไทย",
   description:
-    "Bangkok AI systems studio building demo-first automation for Thai SMEs: lead response, operations workflows, business dashboards, and maintained AI agents.",
+    "mhoooo สร้าง AI products ที่มี Second Brain อยู่ข้างใน สำหรับธุรกิจไทย เริ่มจาก workflow จริง แล้วต่อยอดเป็น chat system, dashboard, content studio, BI และ custom agent ได้ไม่จำกัด",
   keywords: [
-    "AI consulting",
-    "Thailand",
-    "tech consulting",
+    "Second Brain",
+    "AI products",
     "AI automation",
     "business AI",
     "Thai SME",
+    "workflow automation",
+    "LINE OA",
+    "LINE Business Assistant",
+    "AI chatbot Thailand",
+    "Thailand",
     "AI agent",
     "Fastwork",
-    "workflow automation",
   ],
   openGraph: {
-    title: "mhoooo - Boring AI systems for real customer work",
+    title: "mhoooo - Second Brain systems",
     description:
-      "Demo-first AI automation and workflow systems for Thai businesses.",
+      "AI products ที่มี Second Brain อยู่ข้างใน และต่อยอดได้ตามงานจริงของธุรกิจไทย",
     url: "https://mhoooo.com",
     siteName: "mhoooo",
-    locale: "en_US",
+    locale: "th_TH",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "mhoooo - Boring AI systems for real customer work",
+    title: "mhoooo - Second Brain systems",
     description:
-      "Demo-first AI automation and workflow systems for Thai businesses.",
+      "AI products ที่ต่อยอดจาก workflow จริงและ business memory",
   },
   robots: {
     index: true,
@@ -55,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="en"
+      lang="th"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

@@ -1,35 +1,35 @@
 const demos = [
   {
     status: "Recording next",
-    title: "FB/IG lead responder",
-    scenario: "A local business gets comments and DMs from new customers.",
+    title: "Support Agent",
+    scenario: "ลูกค้าทักมาถามสินค้า ราคา stock หรือ delivery ใน LINE OA",
     system:
-      "The agent qualifies the lead, drafts the reply, and prepares owner handoff without posting free-form messages automatically.",
-    evidence: "Fastwork sales demo",
+      "ตอบจาก FAQ ที่อนุมัติแล้ว ถามคำถามต่อเพื่อ qualify lead และหยุดรอคนอนุมัติเมื่อเป็นเรื่องราคา ส่วนลด หรือคำมั่นสัญญา",
+    evidence: "Customer-facing",
   },
   {
-    status: "Active proof",
-    title: "GranMonte import operating room",
-    scenario: "Thai wine import work needs account follow-up, compliance state, and launch blockers in one place.",
+    status: "Operator side",
+    title: "Operator Assistant",
+    scenario: "ทีมต้องไล่อ่านหลายแชทเพื่อรู้ว่าใครรอตอบ อะไรต้องเช็ก และอะไรต้องตัดสินใจ",
     system:
-      "The system turns records and meetings into validation events, forecasts, follow-ups, and next actions.",
-    evidence: "Up proof case",
+      "สรุปให้เจ้าของหรือทีมเห็น context, next action, stock risk, approval request และ follow-up โดยไม่ต้องเปิดทุก conversation เอง",
+    evidence: "Owner cockpit",
   },
   {
-    status: "Build proof",
-    title: "Airship OS mission board",
-    scenario: "A company needs a business operating system that shows missions, blockers, approvals, and real work state.",
+    status: "Trust layer",
+    title: "Truthful urgency",
+    scenario: "ลูกค้า 3 คนถามสินค้าตัวเดียวกัน แต่ stock เหลือ 1 ชิ้น",
     system:
-      "The product turns operations into a playable control surface where every mission is tied to customer evidence.",
-    evidence: "Product direction",
+      "ระบบพูดเรื่อง demand หรือของใกล้หมดได้เฉพาะเมื่อมีหลักฐานจาก chat, stock, reservation หรือ approval log เท่านั้น",
+    evidence: "No fake scarcity",
   },
   {
-    status: "Internal proof",
-    title: "JARVIS knowledge workflow",
-    scenario: "Moo saves a reel, link, or note and wants it turned into reusable project intelligence.",
+    status: "Product spine",
+    title: "Business memory",
+    scenario: "คำถามลูกค้า objection และ follow-up กระจายอยู่ในแชท",
     system:
-      "The system captures the source, extracts the mechanism, connects it to active work, and creates a seed or task.",
-    evidence: "Second Brain runtime",
+      "ทุก conversation ถูกสรุปเป็น customer memory, FAQ seed, demand signal, task และ future product idea ที่เอากลับมาใช้ได้",
+    evidence: "Second Brain",
   },
 ];
 
@@ -41,12 +41,12 @@ export function DemoLibrary() {
           <div>
             <p className="eyebrow text-[#f0bf7a]">Demo library</p>
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
-              Show the work. Then sell the install.
+              เดโมแรกคือ LINE แต่ความต่างคือวิธีคิดของระบบ
             </h2>
             <p className="mt-6 text-lg leading-8 text-porcelain/68">
-              Every service offer needs a screen recording that shows the raw
-              input, the system action, the human approval boundary, and the
-              useful output. This is the antidote to generic AI marketing.
+              ระบบแชทนี้มีสองฝั่ง: agent ที่คุยกับลูกค้า และ assistant ที่ช่วย
+              ทีมตัดสินใจหลังบ้าน ทั้งคู่ใช้ memory เดียวกัน มี approval gate
+              และสร้างข้อมูลที่ต่อยอดเป็น product อื่นได้
             </p>
           </div>
 
