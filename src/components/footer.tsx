@@ -18,10 +18,16 @@ export function Footer() {
               Products
             </a>
             <a
-              href="#demos"
+              href="#showcase"
               className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
             >
-              Demos
+              Showcase
+            </a>
+            <a
+              href="#learn"
+              className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
+            >
+              Learn
             </a>
             <a
               href="#about"

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "mhoooo - Second Brain systems สำหรับธุรกิจไทย",
   description:
-    "mhoooo ออกแบบ AI products สำหรับงานที่มีข้อมูลกระจัดกระจาย การตัดสินใจซ้ำ และ context ที่ไม่ควรหายไป โดยเชื่อมระบบเข้ากับ Second Brain",
+    "mhoooo ออกแบบ AI products, Second Brain workflows, advanced agent systems และคอร์สสอนทำเอง สำหรับงานที่มีข้อมูลกระจัดกระจายและ context ที่ไม่ควรหายไป",
   keywords: [
     "Second Brain",
     "AI products",
@@ -25,6 +25,9 @@ export const metadata: Metadata = {
     "project memory",
     "knowledge management",
     "operations automation",
+    "AI course",
+    "workflow course",
+    "agent operating system",
     "workflow automation",
     "LINE OA",
     "LINE Business Assistant",
@@ -36,7 +39,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "mhoooo - Second Brain systems",
     description:
-      "AI products ที่เริ่มจาก workflow จริงและต่อยอดด้วย Second Brain ของธุรกิจ",
+      "Showcase, courses, and custom AI products with Second Brain inside.",
     url: "https://mhoooo.com",
     siteName: "mhoooo",
     locale: "th_TH",
@@ -46,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "mhoooo - Second Brain systems",
     description:
-      "AI products ที่เริ่มจาก workflow จริงและต่อยอดด้วย business memory",
+      "Showcase, courses, and custom AI products with Second Brain inside.",
   },
   robots: {
     index: true,
