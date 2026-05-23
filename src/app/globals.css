@@ -1,61 +1,56 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background: #0a0a0f;
-  --color-foreground: #ededed;
-  --color-accent-purple: #8b5cf6;
-  --color-accent-cyan: #06b6d4;
+  --color-background: #f4efe6;
+  --color-foreground: #171511;
+  --color-ink: #171511;
+  --color-paper: #f4efe6;
+  --color-porcelain: #fffaf0;
+  --color-work-green: #506f55;
+  --color-rust: #b85c38;
+  --color-harbor: #315d6b;
+  --color-line: #d8cfc0;
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 html {
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
-  background-color: #0a0a0f;
-  color: #ededed;
+  background-color: #f4efe6;
+  color: #171511;
   font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
 }
 
-/* Gradient text utility */
-.gradient-text {
-  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+a {
+  text-underline-offset: 4px;
 }
 
-/* Gradient border utility */
-.gradient-border {
-  position: relative;
-  background: #12121a;
-  border-radius: 1rem;
-}
-.gradient-border::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  border-radius: 1rem;
-  background: linear-gradient(135deg, #8b5cf6, #06b6d4);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  -webkit-mask-composite: xor;
-  pointer-events: none;
+.section-shell {
+  margin-inline: auto;
+  width: min(1120px, calc(100% - 32px));
 }
 
-/* Glow effect */
-.glow {
-  box-shadow: 0 0 40px rgba(139, 92, 246, 0.15), 0 0 80px rgba(6, 182, 212, 0.1);
+.eyebrow {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
-/* Subtle grid background */
-.grid-bg {
+.soft-grid {
   background-image:
-    linear-gradient(rgba(139, 92, 246, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(139, 92, 246, 0.03) 1px, transparent 1px);
-  background-size: 60px 60px;
+    linear-gradient(rgba(23, 21, 17, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 21, 17, 0.06) 1px, transparent 1px);
+  background-size: 48px 48px;
+}
+
+.status-dot {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 999px;
+  background: currentColor;
 }

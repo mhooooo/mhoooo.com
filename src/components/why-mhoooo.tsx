@@ -1,53 +1,50 @@
 const differentiators = [
   {
-    title: "Thai-First",
+    title: "Demo-first",
     description:
-      "Founded in Bangkok. We understand Thai business culture, LINE commerce, and how SMEs actually operate — because we are one.",
+      "We record a working flow before asking you to commit to a larger install.",
   },
   {
-    title: "Founder-Led",
+    title: "Approval-safe",
     description:
-      "You work directly with the founder, not a junior consultant. One point of contact. Full accountability.",
+      "Customer-facing messages and risky actions stay behind explicit human approval.",
   },
   {
-    title: "฿25K/month",
+    title: "Maintained",
     description:
-      "Less than hiring one junior developer. You get an entire AI department — automation, content, analytics, agents.",
+      "The work does not end at handoff. Logs, fixes, and iteration are part of the system.",
   },
   {
-    title: "Results or We Fix It",
+    title: "Built from real work",
     description:
-      "If it doesn't save you time or make you money, we haven't done our job. We iterate until it works.",
+      "GranMonte, Airship OS, and JARVIS Hub are operating proof sources, not pitch-deck examples.",
   },
 ];
 
 export function WhyMhoooo() {
   return (
-    <section id="why-mhoooo" className="py-20 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-widest text-accent-cyan">
-            Why mhoooo
-          </p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            Not a consultancy.{" "}
-            <span className="gradient-text">A partner.</span>
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-            We succeed only when you succeed. That&apos;s not a tagline — it&apos;s how
-            we structure every engagement.
+    <section id="why-mhoooo" className="bg-paper py-20 md:py-28">
+      <div className="section-shell">
+        <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+          <div>
+            <p className="eyebrow text-harbor">Proof rules</p>
+            <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
+              What makes this different from AI consulting noise.
+            </h2>
+          </div>
+          <p className="text-lg leading-8 text-ink/66">
+            The output has to survive contact with a customer, a staff member,
+            and a busy owner. Pretty is useful only after the workflow works.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2">
           {differentiators.map((item) => (
-            <div key={item.title} className="flex gap-4 p-6">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-gradient-to-br from-accent-purple/20 to-accent-cyan/20">
-                <div className="h-2.5 w-2.5 rounded-full bg-gradient-to-r from-accent-purple to-accent-cyan" />
-              </div>
+            <div key={item.title} className="flex gap-4 rounded-lg border border-line bg-porcelain p-6">
+              <div className="mt-2 h-3 w-3 shrink-0 rounded-full bg-rust" />
               <div>
-                <h3 className="text-lg font-semibold">{item.title}</h3>
-                <p className="mt-2 text-zinc-400 leading-relaxed">
+                <h3 className="text-xl font-black">{item.title}</h3>
+                <p className="mt-2 leading-7 text-ink/66">
                   {item.description}
                 </p>
               </div>
@@ -55,19 +52,14 @@ export function WhyMhoooo() {
           ))}
         </div>
 
-        {/* Comparison callout */}
-        <div className="mt-16 gradient-border p-8 text-center glow">
-          <p className="text-lg text-zinc-300">
-            Traditional consultancy: <span className="line-through text-zinc-600">฿200K+/month</span>
+        <div className="mt-12 rounded-lg bg-ink p-6 text-porcelain md:p-8">
+          <p className="max-w-3xl text-2xl font-black leading-snug">
+            The public site should become a living demo shelf: every Fastwork
+            post, product offer, and case study points back to a real recording.
           </p>
-          <p className="text-lg text-zinc-300">
-            In-house dev team: <span className="line-through text-zinc-600">฿150K+/month</span>
-          </p>
-          <p className="mt-4 text-2xl font-bold">
-            mhoooo: <span className="gradient-text">฿25,000/month</span>
-          </p>
-          <p className="mt-2 text-sm text-zinc-500">
-            One partner. Full AI department. Real results.
+          <p className="mt-5 max-w-3xl leading-7 text-porcelain/68">
+            That is how mhoooo.com stops looking like generic AI web design and
+            starts acting like proof infrastructure.
           </p>
         </div>
       </div>

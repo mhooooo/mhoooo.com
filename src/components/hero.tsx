@@ -1,50 +1,60 @@
+import Image from "next/image";
+
 export function Hero() {
   return (
-    <section className="relative grid-bg overflow-hidden pt-32 pb-20 md:pt-44 md:pb-32">
-      {/* Background glow */}
-      <div className="pointer-events-none absolute top-0 left-1/2 -translate-x-1/2 h-[600px] w-[800px] rounded-full bg-accent-purple/10 blur-[120px]" />
-      <div className="pointer-events-none absolute top-20 left-1/3 h-[400px] w-[600px] rounded-full bg-accent-cyan/8 blur-[100px]" />
+    <section className="relative min-h-[74vh] overflow-hidden bg-ink text-porcelain md:min-h-[82vh]">
+      <Image
+        src="/founder-avatar.jpg"
+        alt="Moo, founder of mhoooo"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[68%_36%] opacity-48"
+      />
+      <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(23,21,17,0.98)_0%,rgba(23,21,17,0.88)_38%,rgba(23,21,17,0.42)_78%)]" />
 
-      <div className="relative mx-auto max-w-6xl px-6 text-center">
-        {/* Badge */}
-        <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-zinc-400">
-          <span className="h-2 w-2 rounded-full bg-emerald-400 animate-pulse" />
-          Now accepting clients in Thailand
+      <div className="section-shell relative flex min-h-[74vh] items-center pt-20 md:min-h-[82vh] md:pt-24">
+        <div className="max-w-3xl py-16">
+          <p className="eyebrow text-rust">Bangkok AI systems studio</p>
+          <h1 className="mt-5 text-6xl font-black leading-none md:text-8xl">
+            mhoooo
+          </h1>
+          <p className="mt-8 max-w-2xl text-3xl font-bold leading-tight md:text-5xl">
+            Boring AI systems for real customer work.
+          </p>
+          <p className="mt-7 max-w-xl text-lg leading-8 text-porcelain/76">
+            We build practical automations for Thai businesses: lead response,
+            follow-up, document handling, operating dashboards, and recorded
+            demos that show the workflow before you buy it.
+          </p>
+
+          <div className="mt-10 flex flex-col gap-3 sm:flex-row">
+            <a
+              href="#demos"
+              className="rounded-md bg-porcelain px-6 py-3 text-center text-sm font-black text-ink transition-colors hover:bg-[#f0bf7a]"
+            >
+              See the demo queue
+            </a>
+            <a
+              href="#contact"
+              className="rounded-md border border-porcelain/35 px-6 py-3 text-center text-sm font-bold text-porcelain transition-colors hover:border-porcelain hover:bg-porcelain/10"
+            >
+              Send one workflow
+            </a>
+          </div>
+
+          <div className="mt-12 hidden max-w-2xl gap-3 text-sm text-porcelain/72 sm:grid sm:grid-cols-3">
+            <div className="border-l border-rust pl-4">
+              Fastwork demo sprint
+            </div>
+            <div className="border-l border-work-green pl-4">
+              Human approval gates
+            </div>
+            <div className="border-l border-harbor pl-4">
+              Maintained after install
+            </div>
+          </div>
         </div>
-
-        {/* Headline */}
-        <h1 className="mx-auto max-w-4xl text-4xl font-bold leading-tight tracking-tight md:text-6xl lg:text-7xl">
-          Your{" "}
-          <span className="gradient-text">AI Department</span>
-          <span className="text-zinc-500">.</span>
-        </h1>
-
-        {/* Subheadline */}
-        <p className="mx-auto mt-6 max-w-2xl text-lg text-zinc-400 md:text-xl">
-          We build, deploy, and maintain AI systems that actually run your
-          business. One partner. Full tech team. A fraction of the cost.
-        </p>
-
-        {/* CTA */}
-        <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
-          <a
-            href="#contact"
-            className="rounded-full bg-gradient-to-r from-accent-purple to-accent-cyan px-8 py-3.5 text-base font-medium text-white transition-opacity hover:opacity-90"
-          >
-            Book a Free Consultation
-          </a>
-          <a
-            href="#how-it-works"
-            className="rounded-full border border-white/10 px-8 py-3.5 text-base text-zinc-400 transition-colors hover:border-white/20 hover:text-white"
-          >
-            See How It Works
-          </a>
-        </div>
-
-        {/* Social proof hint */}
-        <p className="mt-16 text-sm text-zinc-600">
-          Trusted by Thai entrepreneurs &middot; Starting at ฿25,000/month
-        </p>
       </div>
     </section>
   );

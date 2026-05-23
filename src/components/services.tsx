@@ -1,57 +1,69 @@
 const services = [
   {
-    icon: "🤖",
-    title: "AI Automation",
+    label: "01",
+    title: "Lead response systems",
     description:
-      "Automate customer service, LINE responses, inventory, scheduling — any repetitive task eating your time. Your AI works 24/7.",
+      "Capture Facebook, Instagram, LINE, email, or form leads, ask the right qualifying questions, and prepare a clean handoff for the owner or sales team.",
+    proof: "First Fastwork demo target",
   },
   {
-    icon: "📊",
-    title: "Business Intelligence",
+    label: "02",
+    title: "Operations copilots",
     description:
-      "Turn your messy data into clear decisions. Sales dashboards, competitor monitoring, financial analysis — all automated.",
+      "Turn messy chats, spreadsheets, files, and emails into tasks, status, follow-ups, and decisions that the business can actually use.",
+    proof: "GranMonte import OS proof case",
   },
   {
-    icon: "📱",
-    title: "Content & Marketing",
+    label: "03",
+    title: "Business dashboards",
     description:
-      "AI-powered social media, SEO content, ad copy, and email campaigns. Consistent output without hiring a marketing team.",
+      "Show the owner what is blocked, what changed, what needs approval, and what the next useful action is. No decorative vanity panels.",
+    proof: "Airship OS direction",
   },
   {
-    icon: "⚡",
-    title: "Custom AI Agents",
+    label: "04",
+    title: "Demo and content machines",
     description:
-      "Purpose-built AI agents for your specific business. Not generic chatbots — intelligent systems that understand your workflow.",
+      "Record product demos, convert real workflows into explainers, and publish evidence that makes the service easier to sell.",
+    proof: "mhoooo.com proof engine",
   },
 ];
 
 export function Services() {
   return (
-    <section id="services" className="py-20 md:py-32">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-widest text-accent-cyan">
-            What We Build
-          </p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            AI that works for{" "}
-            <span className="gradient-text">your business</span>
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-zinc-400">
-            Not another chatbot. Not a strategy deck. Working systems that save
-            you time and make you money.
+    <section id="services" className="bg-porcelain py-20 md:py-28">
+      <div className="section-shell">
+        <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
+          <div>
+            <p className="eyebrow text-rust">What we build</p>
+            <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
+              Useful systems before beautiful dashboards.
+            </h2>
+          </div>
+          <p className="text-lg leading-8 text-ink/66">
+            The first question is not &ldquo;what can AI do?&rdquo; It is
+            &ldquo;which customer workflow is wasting time or losing money?&rdquo;
+            Then we build that one
+            workflow, record it, and only install it if the demo is convincing.
           </p>
         </div>
 
-        <div className="mt-16 grid gap-6 sm:grid-cols-2">
+        <div className="mt-14 grid gap-4 sm:grid-cols-2">
           {services.map((service) => (
             <div
               key={service.title}
-              className="gradient-border p-8 transition-transform hover:-translate-y-1"
+              className="rounded-lg border border-line bg-paper p-6 shadow-sm transition-colors hover:border-ink/30"
             >
-              <span className="text-3xl">{service.icon}</span>
-              <h3 className="mt-4 text-xl font-semibold">{service.title}</h3>
-              <p className="mt-3 text-zinc-400 leading-relaxed">
+              <div className="flex items-start justify-between gap-4">
+                <span className="font-mono text-sm font-bold text-rust">
+                  {service.label}
+                </span>
+                <span className="rounded-sm border border-ink/10 px-2 py-1 text-xs font-bold text-ink/55">
+                  {service.proof}
+                </span>
+              </div>
+              <h3 className="mt-8 text-2xl font-black">{service.title}</h3>
+              <p className="mt-3 leading-7 text-ink/66">
                 {service.description}
               </p>
             </div>

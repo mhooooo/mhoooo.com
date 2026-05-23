@@ -3,9 +3,10 @@
 import { useState } from "react";
 
 const navLinks = [
-  { href: "#services", label: "Services" },
-  { href: "#how-it-works", label: "How It Works" },
-  { href: "#why-mhoooo", label: "Why Us" },
+  { href: "#services", label: "Work" },
+  { href: "#demos", label: "Demos" },
+  { href: "#how-it-works", label: "Method" },
+  { href: "#why-mhoooo", label: "Proof" },
   { href: "#about", label: "About" },
   { href: "#contact", label: "Contact" },
 ];
@@ -14,59 +15,59 @@ export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 border-b border-white/5 bg-[#0a0a0f]/80 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="text-xl font-bold tracking-tight gradient-text">
-          mhoooo
+    <header className="fixed left-0 right-0 top-0 z-50 border-b border-ink/10 bg-porcelain/88 backdrop-blur-xl">
+      <nav className="section-shell flex items-center justify-between py-4">
+        <a href="#" className="flex flex-col leading-none text-ink">
+          <span className="text-xl font-black">mhoooo</span>
+          <span className="mt-1 text-[0.68rem] font-semibold text-rust">
+            AI systems studio
+          </span>
         </a>
 
-        {/* Desktop nav */}
-        <div className="hidden items-center gap-8 md:flex">
+        <div className="hidden items-center gap-7 md:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-zinc-400 transition-colors hover:text-white"
+              className="text-sm font-medium text-ink/65 transition-colors hover:text-ink"
             >
               {link.label}
             </a>
           ))}
           <a
             href="#contact"
-            className="rounded-full bg-gradient-to-r from-accent-purple to-accent-cyan px-5 py-2 text-sm font-medium text-white transition-opacity hover:opacity-90"
+            className="rounded-md bg-ink px-5 py-2 text-sm font-bold text-porcelain transition-colors hover:bg-rust"
           >
-            Get Started
+            Start one workflow
           </a>
         </div>
 
-        {/* Mobile hamburger */}
         <button
           className="flex flex-col gap-1.5 md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
           <span
-            className={`h-0.5 w-6 bg-white transition-transform ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
+            className={`h-0.5 w-6 bg-ink transition-transform ${mobileOpen ? "translate-y-2 rotate-45" : ""}`}
           />
           <span
-            className={`h-0.5 w-6 bg-white transition-opacity ${mobileOpen ? "opacity-0" : ""}`}
+            className={`h-0.5 w-6 bg-ink transition-opacity ${mobileOpen ? "opacity-0" : ""}`}
           />
           <span
-            className={`h-0.5 w-6 bg-white transition-transform ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
+            className={`h-0.5 w-6 bg-ink transition-transform ${mobileOpen ? "-translate-y-2 -rotate-45" : ""}`}
           />
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-t border-white/5 bg-[#0a0a0f]/95 backdrop-blur-xl md:hidden">
+        <div className="border-t border-ink/10 bg-porcelain md:hidden">
           <div className="flex flex-col gap-4 px-6 py-6">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-zinc-400 transition-colors hover:text-white"
+                className="font-medium text-ink/70 transition-colors hover:text-ink"
               >
                 {link.label}
               </a>
@@ -74,9 +75,9 @@ export function Header() {
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
-              className="mt-2 rounded-full bg-gradient-to-r from-accent-purple to-accent-cyan px-5 py-2.5 text-center text-sm font-medium text-white"
+              className="mt-2 rounded-md bg-ink px-5 py-2.5 text-center text-sm font-bold text-porcelain"
             >
-              Get Started
+              Start one workflow
             </a>
           </div>
         </div>

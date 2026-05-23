@@ -1,35 +1,43 @@
 export function Footer() {
   return (
-    <footer className="border-t border-white/5 py-12">
-      <div className="mx-auto max-w-6xl px-6">
+    <footer className="border-t border-ink/10 bg-porcelain py-10">
+      <div className="section-shell">
         <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
           <div>
-            <span className="text-lg font-bold gradient-text">mhoooo</span>
-            <p className="mt-1 text-sm text-zinc-600">Your AI department.</p>
+            <span className="text-lg font-black text-ink">mhoooo</span>
+            <p className="mt-1 text-sm font-medium text-ink/50">
+              Boring AI systems for real customer work.
+            </p>
           </div>
 
-          <div className="flex gap-8">
+          <div className="flex flex-wrap justify-center gap-6">
             <a
               href="#services"
-              className="text-sm text-zinc-500 transition-colors hover:text-white"
+              className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
             >
-              Services
+              Work
+            </a>
+            <a
+              href="#demos"
+              className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
+            >
+              Demos
             </a>
             <a
               href="#about"
-              className="text-sm text-zinc-500 transition-colors hover:text-white"
+              className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
             >
               About
             </a>
             <a
               href="#contact"
-              className="text-sm text-zinc-500 transition-colors hover:text-white"
+              className="text-sm font-medium text-ink/58 transition-colors hover:text-ink"
             >
               Contact
             </a>
           </div>
 
-          <p className="text-sm text-zinc-700">
+          <p className="text-sm font-medium text-ink/42">
             &copy; {new Date().getFullYear()} mhoooo. Bangkok, Thailand.
           </p>
         </div>

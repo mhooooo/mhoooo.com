@@ -13,9 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "mhoooo — Your AI Department",
+  title: "mhoooo - Boring AI systems for real customer work",
   description:
-    "Thai tech consulting powered by AI. We build, deploy, and maintain intelligent systems that actually run your business. Your dedicated AI partner at a fraction of the cost.",
+    "Bangkok AI systems studio building demo-first automation for Thai SMEs: lead response, operations workflows, business dashboards, and maintained AI agents.",
   keywords: [
     "AI consulting",
     "Thailand",
@@ -24,11 +24,13 @@ export const metadata: Metadata = {
     "business AI",
     "Thai SME",
     "AI agent",
+    "Fastwork",
+    "workflow automation",
   ],
   openGraph: {
-    title: "mhoooo — Your AI Department",
+    title: "mhoooo - Boring AI systems for real customer work",
     description:
-      "Thai tech consulting powered by AI. We build intelligent systems that actually run your business.",
+      "Demo-first AI automation and workflow systems for Thai businesses.",
     url: "https://mhoooo.com",
     siteName: "mhoooo",
     locale: "en_US",
@@ -36,9 +38,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "mhoooo — Your AI Department",
+    title: "mhoooo - Boring AI systems for real customer work",
     description:
-      "Thai tech consulting powered by AI. We build intelligent systems that actually run your business.",
+      "Demo-first AI automation and workflow systems for Thai businesses.",
   },
   robots: {
     index: true,

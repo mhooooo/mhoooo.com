@@ -1,53 +1,52 @@
 const steps = [
   {
     number: "01",
-    title: "Audit",
+    title: "Pick one workflow",
     description:
-      "We map your business processes, find the bottlenecks, and identify where AI creates the most impact. Free, no commitment.",
+      "Bring one repetitive customer or operations task. We map the input, decision, approval boundary, and output.",
   },
   {
     number: "02",
-    title: "Build",
+    title: "Build the demo",
     description:
-      "We design and deploy custom AI systems tailored to your business. Not off-the-shelf — built for how you actually work.",
+      "We create a working prototype and record the screen so you can see the workflow before paying for a full install.",
   },
   {
     number: "03",
-    title: "Maintain",
+    title: "Install and maintain",
     description:
-      "We don't disappear after delivery. Ongoing monitoring, optimization, and support. Your AI gets smarter over time.",
+      "If the demo proves useful, we connect real accounts, add guardrails, train the operator, and keep the system running.",
   },
 ];
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="relative py-20 md:py-32">
-      {/* Background accent */}
-      <div className="pointer-events-none absolute right-0 top-1/2 -translate-y-1/2 h-[500px] w-[400px] rounded-full bg-accent-purple/5 blur-[100px]" />
-
-      <div className="relative mx-auto max-w-6xl px-6">
-        <div className="text-center">
-          <p className="text-sm font-medium uppercase tracking-widest text-accent-cyan">
-            How It Works
+    <section id="how-it-works" className="soft-grid bg-[#dfe9d8] py-20 md:py-28">
+      <div className="section-shell">
+        <div className="grid gap-8 md:grid-cols-[0.85fr_1.15fr] md:items-end">
+          <div>
+            <p className="eyebrow text-work-green">Method</p>
+            <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
+              A boring path from idea to useful system.
+            </h2>
+          </div>
+          <p className="text-lg leading-8 text-ink/68">
+            The demo sprint protects the customer from buying theory and
+            protects us from building software nobody uses.
           </p>
-          <h2 className="mt-3 text-3xl font-bold md:text-4xl">
-            From zero to AI-powered in{" "}
-            <span className="gradient-text">weeks, not months</span>
-          </h2>
         </div>
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
+        <div className="mt-14 grid gap-4 md:grid-cols-3">
           {steps.map((step, i) => (
-            <div key={step.number} className="relative">
-              {/* Connector line */}
+            <div key={step.number} className="relative rounded-lg bg-porcelain p-6">
               {i < steps.length - 1 && (
-                <div className="pointer-events-none absolute top-8 left-full hidden h-px w-full bg-gradient-to-r from-accent-purple/30 to-transparent md:block" />
+                <div className="pointer-events-none absolute left-full top-10 hidden h-px w-4 bg-ink/25 md:block" />
               )}
-              <div className="gradient-text text-5xl font-bold">
+              <div className="font-mono text-sm font-black text-rust">
                 {step.number}
               </div>
-              <h3 className="mt-4 text-xl font-semibold">{step.title}</h3>
-              <p className="mt-3 text-zinc-400 leading-relaxed">
+              <h3 className="mt-8 text-2xl font-black">{step.title}</h3>
+              <p className="mt-3 leading-7 text-ink/66">
                 {step.description}
               </p>
             </div>
