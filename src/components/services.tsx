@@ -1,38 +1,38 @@
 const services = [
   {
     label: "01",
-    title: "Second Brain in every product",
+    title: "Second Brain foundation",
     description:
-      "ไม่ว่าจะเริ่มจาก chat, lead, content, reporting หรือ operations ระบบจะเก็บ memory ที่เอาไปใช้ต่อกับ feature ใหม่ได้",
-    proof: "Core promise",
+      "ทุก product เก็บความรู้จากงานจริงไว้เป็นฐานเดียวกัน เช่น คำถามลูกค้า lead ที่หลุด งานที่ต้องตาม และเหตุผลที่ทีมตัดสินใจ",
+    proof: "Memory layer",
   },
   {
     label: "02",
-    title: "Productized workflows",
+    title: "Workflow products",
     description:
-      "เริ่มจากงานที่เสียเวลาหรือทำเงินหลุดจริง ทำ demo ให้เห็นก่อน แล้วค่อยติดตั้งเป็น product ที่ดูแลต่อได้",
-    proof: "Demo first",
+      "เราไม่เริ่มจากคำว่า “อยากใช้ AI” แต่เริ่มจาก workflow ที่วัดผลได้ แล้วทำให้เป็นระบบที่ใช้งานซ้ำ ดูแลต่อ และปรับปรุงได้",
+    proof: "Practical first",
   },
   {
     label: "03",
-    title: "LINE chat system, but different",
+    title: "LINE chat system",
     description:
-      "ไม่ใช่ bot ตอบ FAQ เฉย ๆ แต่มี Support Agent คุยกับลูกค้า และ Operator Assistant ช่วยทีมเช็กข้อมูล ขออนุมัติ และบันทึก memory",
-    proof: "First product",
+      "ตัวอย่าง product แรกคือระบบแชทที่มีทั้ง Support Agent สำหรับหน้าลูกค้า และ Operator Assistant สำหรับทีมหลังบ้าน",
+    proof: "First demo",
   },
   {
     label: "04",
-    title: "Truthful business signals",
+    title: "Proof-based decisions",
     description:
-      "ถ้าจะบอกว่า “มี 3 คนถามสินค้านี้ เหลือ 1 ชิ้น” ต้องมาจากข้อมูลจริง เช่น chat demand, stock, reservation และ approval log",
+      "คำแนะนำของระบบควรมาจากหลักฐาน เช่น ประวัติแชท stock, reservation, approval log หรือ pattern ที่เกิดซ้ำ ไม่ใช่การเดา",
     proof: "Trust layer",
   },
   {
     label: "05",
-    title: "Endless expansion",
+    title: "Expandable modules",
     description:
-      "เพิ่ม domain, channel, social media, studio, dashboard, BI หรือ custom agent ใหม่ได้ตามปัญหาที่ธุรกิจเจอ ไม่มีเพดานตายตัว",
-    proof: "No ceiling",
+      "เมื่องานแรกเริ่มนิ่ง สามารถต่อ channel, dashboard, content studio, BI หรือ custom agent ใหม่จากฐานความรู้เดิม",
+    proof: "Built to grow",
   },
 ];
 
@@ -44,13 +44,13 @@ export function Services() {
           <div>
             <p className="eyebrow text-rust">What we build</p>
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
-              ไม่ได้ขายแค่ chatbot เราขาย product ที่จำงานของธุรกิจได้
+              จาก workflow แรก สู่ระบบที่จำและต่อยอดได้
             </h2>
           </div>
           <p className="text-lg leading-8 text-ink/66">
-            LINE เป็น product แรกเพราะแชทคือจุดที่ลูกค้า เงิน และข้อมูลไหลผ่าน
-            แต่ positioning จริงคือ Second Brain foundation: สร้างระบบหนึ่งแล้ว
-            ต่อระบบถัดไปจากความรู้เดิม ไม่ใช่เริ่มใหม่ทุก project
+            วิธีคิดของเราง่ายมาก: เลือกงานที่ทำซ้ำ สร้างระบบให้ช่วยงานนั้นอย่างปลอดภัย
+            แล้วเก็บบทเรียนจากการใช้งานไว้ใน Second Brain เพื่อให้ product ถัดไปฉลาดขึ้น
+            ตั้งแต่วันแรก
           </p>
         </div>
 

@@ -6,11 +6,11 @@ export function Contact() {
           <div>
             <p className="eyebrow text-[#f0bf7a]">Start small</p>
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
-              ส่ง workflow แรกที่อยากให้ AI ช่วย
+              ส่ง workflow ที่อยากให้ระบบช่วย
             </h2>
             <p className="mt-5 text-lg leading-8 text-porcelain/70">
-              บอกแค่ว่าลูกค้าทักมาจากไหน ตอนนี้ทีมตอบยังไง ต้องเช็กอะไร
-              และเรื่องไหนต้องให้คนอนุมัติ
+              เขียนง่าย ๆ ว่างานเริ่มจากไหน ข้อมูลอยู่ที่ไหน ใครต้องตัดสินใจ
+              และอยากได้ผลลัพธ์แบบไหน
             </p>
           </div>
 
@@ -30,8 +30,8 @@ export function Contact() {
                 Email workflow
               </a>
               <p className="text-sm leading-6 text-porcelain/55">
-                Fastwork อาจเริ่มจากเดโม LINE chat system แต่ระบบถัดไปจะต่อจาก
-                Second Brain เดิม ไม่ใช่ project แยกที่เริ่มจากศูนย์
+                เดโมแรกอาจเป็นระบบแชทหรือ workflow อื่นก็ได้ สิ่งสำคัญคือเริ่มจากงานจริง
+                แล้วเก็บ memory ไว้ต่อยอดรอบถัดไป
               </p>
             </div>
           </div>

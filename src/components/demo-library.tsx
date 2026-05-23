@@ -1,34 +1,34 @@
 const demos = [
   {
     status: "Recording next",
-    title: "Support Agent",
+    title: "Customer Support Agent",
     scenario: "ลูกค้าทักมาถามสินค้า ราคา stock หรือ delivery ใน LINE OA",
     system:
-      "ตอบจาก FAQ ที่อนุมัติแล้ว ถามคำถามต่อเพื่อ qualify lead และหยุดรอคนอนุมัติเมื่อเป็นเรื่องราคา ส่วนลด หรือคำมั่นสัญญา",
-    evidence: "Customer-facing",
+      "ตอบจาก FAQ ที่อนุมัติแล้ว ถามคำถามต่อเพื่อคัดกรอง lead และหยุดรอคนอนุมัติเมื่อเป็นเรื่องราคา ส่วนลด หรือคำมั่นสัญญา",
+    evidence: "Front office",
   },
   {
     status: "Operator side",
     title: "Operator Assistant",
     scenario: "ทีมต้องไล่อ่านหลายแชทเพื่อรู้ว่าใครรอตอบ อะไรต้องเช็ก และอะไรต้องตัดสินใจ",
     system:
-      "สรุปให้เจ้าของหรือทีมเห็น context, next action, stock risk, approval request และ follow-up โดยไม่ต้องเปิดทุก conversation เอง",
-    evidence: "Owner cockpit",
+      "สรุป context, next action, stock risk, approval request และ follow-up ให้ทีมเห็นในมุมเดียว โดยไม่ต้องเปิดทุก conversation เอง",
+    evidence: "Back office",
   },
   {
     status: "Trust layer",
-    title: "Truthful urgency",
+    title: "Live sales signals",
     scenario: "ลูกค้า 3 คนถามสินค้าตัวเดียวกัน แต่ stock เหลือ 1 ชิ้น",
     system:
-      "ระบบพูดเรื่อง demand หรือของใกล้หมดได้เฉพาะเมื่อมีหลักฐานจาก chat, stock, reservation หรือ approval log เท่านั้น",
-    evidence: "No fake scarcity",
+      "ระบบแจ้งทีมว่ามี demand เกิดขึ้น และช่วยร่างข้อความที่ซื่อสัตย์กับข้อมูลจริง เช่น stock, reservation และประวัติคำถาม",
+    evidence: "Live facts",
   },
   {
     status: "Product spine",
     title: "Business memory",
     scenario: "คำถามลูกค้า objection และ follow-up กระจายอยู่ในแชท",
     system:
-      "ทุก conversation ถูกสรุปเป็น customer memory, FAQ seed, demand signal, task และ future product idea ที่เอากลับมาใช้ได้",
+      "ทุก conversation ถูกสรุปเป็น customer memory, FAQ seed, demand signal, task และ product idea ที่เอากลับมาใช้ต่อได้",
     evidence: "Second Brain",
   },
 ];
@@ -41,12 +41,12 @@ export function DemoLibrary() {
           <div>
             <p className="eyebrow text-[#f0bf7a]">Demo library</p>
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
-              เดโมแรกคือ LINE แต่ความต่างคือวิธีคิดของระบบ
+              ตัวอย่าง product แรก: ระบบแชทที่มีหลังบ้าน
             </h2>
             <p className="mt-6 text-lg leading-8 text-porcelain/68">
-              ระบบแชทนี้มีสองฝั่ง: agent ที่คุยกับลูกค้า และ assistant ที่ช่วย
-              ทีมตัดสินใจหลังบ้าน ทั้งคู่ใช้ memory เดียวกัน มี approval gate
-              และสร้างข้อมูลที่ต่อยอดเป็น product อื่นได้
+              chatbot ทั่วไปมักหยุดที่การตอบคำถาม แต่ธุรกิจต้องการมากกว่านั้น:
+              รู้ว่าลูกค้าคนไหนสำคัญ อะไรต้องขออนุมัติ stock พอไหม และคำถามเหล่านี้
+              สอนอะไรให้ธุรกิจ ระบบนี้จึงแยกเป็นสองบทบาทที่ใช้ memory เดียวกัน
             </p>
           </div>
 

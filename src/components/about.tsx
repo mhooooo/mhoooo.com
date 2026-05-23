@@ -7,7 +7,7 @@ export function About() {
         <div className="grid gap-12 md:grid-cols-2 md:items-center">
           <div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-line bg-ink">
             <Image
-              src="/founder-avatar.jpg"
+              src="/founder-avatar-main-2026-05-23.jpg"
               alt="Tanyawit Moo Nilnavarat"
               fill
               sizes="(min-width: 768px) 50vw, 100vw"

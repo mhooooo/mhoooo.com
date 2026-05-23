@@ -1,48 +1,48 @@
 const possibilities = [
   {
-    title: "Reply",
+    title: "Customer Memory",
     description:
-      "ตอบลูกค้าเร็วขึ้นจากข้อมูลที่อนุมัติแล้ว ไม่ว่าจะอยู่ใน LINE, Facebook, web หรือ channel ใหม่",
+      "เก็บคำถามซ้ำ objection, product demand, lost lead และ follow-up ไว้ให้ทีมกลับมาใช้ได้",
   },
   {
-    title: "Remember",
+    title: "Sales Signals",
     description:
-      "เก็บคำถามซ้ำ objection, product demand, lost lead, follow-up และการตัดสินใจไว้เป็น business memory",
+      "เห็น pattern ที่เกิดซ้ำ เช่น สินค้าที่คนถามบ่อย lead ที่ร้อน หรือจุดที่ลูกค้ามักลังเล",
   },
   {
-    title: "Decide",
+    title: "Approval Flow",
     description:
-      "ให้เจ้าของหรือทีมอนุมัติเรื่องสำคัญจาก context ที่ครบ ไม่ต้องไล่เปิดทุกแชทเอง",
+      "แยกเรื่องที่ AI ตอบเองได้ออกจากเรื่องที่ต้องให้เจ้าของหรือทีมอนุมัติก่อน",
   },
   {
-    title: "Sense Demand",
+    title: "Multi-channel Support",
     description:
-      "เห็นสัญญาณ demand, stock pressure, repeated objections และ lead ที่กำลังร้อนจากข้อมูลจริง",
+      "เชื่อม LINE, Facebook, Instagram, website หรือ form เข้ากับ memory และ workflow เดียวกัน",
   },
   {
-    title: "Run Channels",
+    title: "Operations Dashboard",
     description:
-      "ต่อหลายช่องทางเข้ากับ memory และ approval flow เดียวกัน โดยไม่แยกสมองเป็นคนละระบบ",
+      "รวมงานที่ต้องตาม งานที่ติดขัด และ decision ที่รออยู่ให้เจ้าของเห็นง่ายขึ้น",
   },
   {
-    title: "Create",
+    title: "Content Studio",
     description:
-      "เปลี่ยนคำถามลูกค้าเป็น FAQ, broadcast idea, script, demo, sales page, campaign หรือ training material",
+      "เปลี่ยนคำถามลูกค้าเป็น FAQ, broadcast idea, script, demo, sales page หรือ campaign",
   },
   {
-    title: "Measure",
+    title: "BI Reports",
     description:
-      "สร้าง dashboard และ BI จากงานจริง: response gaps, conversion signals, operations bottlenecks และ missed revenue",
+      "สร้าง report จากงานจริง เช่น response gaps, conversion signals, bottlenecks และ missed revenue",
   },
   {
-    title: "Build Custom Domains",
+    title: "Training & SOP",
     description:
-      "เพิ่ม agent เฉพาะทางสำหรับ sales, admin, inventory, content, reporting, training หรือ workflow แปลก ๆ ของธุรกิจ",
+      "ใช้สิ่งที่ระบบเรียนรู้มาช่วยเขียน SOP, training material และ guideline ให้ทีมทำงานสม่ำเสมอขึ้น",
   },
   {
-    title: "Whatever Comes Next",
+    title: "Custom Agents",
     description:
-      "ถ้ามีงานใหม่ที่ทำซ้ำ มีข้อมูล มี decision และมีคนต้องรับผิดชอบ มันต่อเข้ากับ Second Brain ได้",
+      "เมื่อมีงานใหม่ที่ทำซ้ำ มีข้อมูล และมี decision ชัดเจน ก็สามารถสร้าง agent เฉพาะทางเพิ่มได้",
   },
 ];
 
@@ -52,15 +52,14 @@ export function WhyMhoooo() {
       <div className="section-shell">
         <div className="grid gap-8 md:grid-cols-[0.8fr_1.2fr] md:items-end">
           <div>
-            <p className="eyebrow text-harbor">Second Brain expansion map</p>
+            <p className="eyebrow text-harbor">Second Brain possibilities</p>
             <h2 className="mt-3 text-3xl font-black leading-tight md:text-5xl">
-              ไม่ใช่ 7 level แล้วจบ เป็นทางเปิดปลาย
+              Second Brain ทำให้ระบบต่อยอดง่ายขึ้น
             </h2>
           </div>
           <p className="text-lg leading-8 text-ink/66">
-            แต่ละ product เป็นเหมือน seed ที่ปลูกลงบน Second Brain เดิม ยิ่งธุรกิจ
-            ใช้ระบบมากขึ้น ยิ่งรู้ว่าควรต่อ domain, channel หรือ custom feature
-            อะไรต่อ
+            เมื่อ product ใหม่ใช้ memory base เดียวกัน ข้อมูลจากงานหนึ่งจะกลายเป็น
+            วัตถุดิบให้อีกงานหนึ่ง ความเป็นไปได้จึงไม่ได้ถูกจำกัดเป็นแพ็กตายตัว
           </p>
         </div>
 
@@ -80,12 +79,12 @@ export function WhyMhoooo() {
 
         <div className="mt-12 rounded-lg bg-ink p-6 text-porcelain md:p-8">
           <p className="max-w-3xl text-2xl font-black leading-snug">
-            ทุก product มี Second Brain อยู่ข้างใน ตั้งแต่แพ็กแรก
+            เริ่มจากระบบเดียว แต่ไม่จำเป็นต้องจบที่ระบบเดียว
           </p>
           <p className="mt-5 max-w-3xl leading-7 text-porcelain/68">
-            แพ็กแรกอาจเป็น LINE chat system, lead responder, dashboard หรือ
-            content studio ก็ได้ สิ่งที่ขายจริงคือ foundation ที่ทำให้ business
-            upgrade ต่อได้เรื่อย ๆ โดยไม่ต้องเริ่มจากศูนย์
+            เมื่องานแรกใช้งานได้จริง คุณจะเห็นคำถามต่อไปเอง: ช่องทางไหนควรเชื่อมเพิ่ม
+            report ไหนควร automate, content ไหนควรสร้าง และ agent ไหนควรช่วยทีมต่อ
+            นี่คือเหตุผลที่เราใส่ Second Brain ไว้ในทุกระบบตั้งแต่แรก
           </p>
         </div>
       </div>

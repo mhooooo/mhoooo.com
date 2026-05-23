@@ -6,7 +6,7 @@ export function Footer() {
           <div>
             <span className="text-lg font-black text-ink">mhoooo</span>
             <p className="mt-1 text-sm font-medium text-ink/50">
-              Second Brain systems for real business work.
+              AI products with Second Brain inside.
             </p>
           </div>
 
