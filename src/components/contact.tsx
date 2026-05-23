@@ -19,8 +19,8 @@ export function Contact() {
               <div className="rounded-md bg-porcelain p-4 text-ink">
                 <p className="text-sm font-black">Example</p>
                 <p className="mt-2 leading-7 text-ink/68">
-                  &ldquo;ลูกค้าทัก LINE มาถามสินค้า ช่วยถามไซซ์ เช็ก stock
-                  สรุปให้ทีม และขออนุมัติเจ้าของก่อนเสนอส่วนลด&rdquo;
+                  &ldquo;ทุกสัปดาห์ทีมมี meeting แล้ว action item กระจาย ช่วยสรุป
+                  decision, owner, deadline และเก็บเป็น project memory ให้ต่อยอดได้&rdquo;
                 </p>
               </div>
               <a

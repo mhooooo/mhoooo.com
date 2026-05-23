@@ -20,12 +20,13 @@ export function Hero() {
             mhoooo
           </h1>
           <p className="mt-8 max-w-2xl text-3xl font-bold leading-tight md:text-5xl">
-            ระบบ AI ที่เรียนรู้ธุรกิจไปพร้อมกับคุณ
+            ระบบ AI ที่เรียนรู้งานไปพร้อมกับทีมของคุณ
           </p>
           <p className="mt-7 max-w-xl text-lg leading-8 text-porcelain/76">
-            mhoooo ออกแบบ AI products สำหรับธุรกิจไทย โดยเริ่มจากงานที่เห็นปัญหา
-            ชัด เช่น ตอบแชท เก็บลีด สรุปงาน หรือทำรายงาน แล้วเชื่อมทุกระบบเข้ากับ
-            Second Brain เพื่อให้ข้อมูลลูกค้า งาน และการตัดสินใจถูกนำกลับมาใช้ต่อได้
+            mhoooo ออกแบบ AI products สำหรับงานที่มีข้อมูลกระจัดกระจาย การตัดสินใจซ้ำ
+            และ context ที่ไม่ควรหายไป ไม่ว่าจะเป็น sales, operations, project,
+            content, training หรือ personal knowledge ทุกระบบเชื่อมเข้ากับ Second Brain
+            เพื่อให้งานครั้งต่อไปฉลาดขึ้นจากงานครั้งก่อน
           </p>
 
           <div className="mt-10 flex flex-col gap-3 sm:flex-row">

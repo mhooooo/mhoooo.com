@@ -3,7 +3,7 @@ const services = [
     label: "01",
     title: "Second Brain foundation",
     description:
-      "ทุก product เก็บความรู้จากงานจริงไว้เป็นฐานเดียวกัน เช่น คำถามลูกค้า lead ที่หลุด งานที่ต้องตาม และเหตุผลที่ทีมตัดสินใจ",
+      "ทุก product เก็บความรู้จากงานจริงไว้เป็นฐานเดียวกัน เช่น project context, decision history, meeting notes, customer insight หรือ SOP",
     proof: "Memory layer",
   },
   {
@@ -15,16 +15,16 @@ const services = [
   },
   {
     label: "03",
-    title: "LINE chat system",
+    title: "Example: LINE chat system",
     description:
-      "ตัวอย่าง product แรกคือระบบแชทที่มีทั้ง Support Agent สำหรับหน้าลูกค้า และ Operator Assistant สำหรับทีมหลังบ้าน",
+      "LINE เป็นตัวอย่างแรกของแนวคิดนี้: มี Support Agent สำหรับหน้าลูกค้า และ Operator Assistant สำหรับทีมหลังบ้านที่ใช้ memory เดียวกัน",
     proof: "First demo",
   },
   {
     label: "04",
     title: "Proof-based decisions",
     description:
-      "คำแนะนำของระบบควรมาจากหลักฐาน เช่น ประวัติแชท stock, reservation, approval log หรือ pattern ที่เกิดซ้ำ ไม่ใช่การเดา",
+      "คำแนะนำของระบบควรมาจากหลักฐาน เช่น ประวัติการคุย เอกสาร meeting, data log, approval history หรือ pattern ที่เกิดซ้ำ ไม่ใช่การเดา",
     proof: "Trust layer",
   },
   {
@@ -50,7 +50,7 @@ export function Services() {
           <p className="text-lg leading-8 text-ink/66">
             วิธีคิดของเราง่ายมาก: เลือกงานที่ทำซ้ำ สร้างระบบให้ช่วยงานนั้นอย่างปลอดภัย
             แล้วเก็บบทเรียนจากการใช้งานไว้ใน Second Brain เพื่อให้ product ถัดไปฉลาดขึ้น
-            ตั้งแต่วันแรก
+            ตั้งแต่วันแรก งานแรกอาจเป็นแชทลูกค้า dashboard ภายใน training flow หรือระบบจัดการ project ก็ได้
           </p>
         </div>
 

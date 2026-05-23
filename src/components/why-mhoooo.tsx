@@ -5,19 +5,19 @@ const possibilities = [
       "เก็บคำถามซ้ำ objection, product demand, lost lead และ follow-up ไว้ให้ทีมกลับมาใช้ได้",
   },
   {
-    title: "Sales Signals",
+    title: "Project Memory",
     description:
-      "เห็น pattern ที่เกิดซ้ำ เช่น สินค้าที่คนถามบ่อย lead ที่ร้อน หรือจุดที่ลูกค้ามักลังเล",
+      "เก็บ brief, decision, blocker, meeting notes และ next action ของแต่ละ project ไว้ในที่เดียว",
   },
   {
-    title: "Approval Flow",
+    title: "Decision Support",
     description:
-      "แยกเรื่องที่ AI ตอบเองได้ออกจากเรื่องที่ต้องให้เจ้าของหรือทีมอนุมัติก่อน",
+      "ช่วยสรุป context ก่อนตัดสินใจ แยกเรื่องที่ AI ทำเองได้ออกจากเรื่องที่ต้องให้คนอนุมัติ",
   },
   {
-    title: "Multi-channel Support",
+    title: "Knowledge Search",
     description:
-      "เชื่อม LINE, Facebook, Instagram, website หรือ form เข้ากับ memory และ workflow เดียวกัน",
+      "ค้นความรู้จากแชท เอกสาร meeting notes หรือไฟล์งาน แล้วตอบพร้อมแหล่งอ้างอิงที่ตรวจย้อนกลับได้",
   },
   {
     title: "Operations Dashboard",
@@ -27,12 +27,12 @@ const possibilities = [
   {
     title: "Content Studio",
     description:
-      "เปลี่ยนคำถามลูกค้าเป็น FAQ, broadcast idea, script, demo, sales page หรือ campaign",
+      "เปลี่ยน research, customer questions, meeting insight หรือ product notes เป็น FAQ, script, demo, article หรือ campaign",
   },
   {
     title: "BI Reports",
     description:
-      "สร้าง report จากงานจริง เช่น response gaps, conversion signals, bottlenecks และ missed revenue",
+      "สร้าง report จากงานจริง เช่น response gaps, conversion signals, team bottlenecks, usage pattern หรือ missed opportunities",
   },
   {
     title: "Training & SOP",
@@ -42,7 +42,7 @@ const possibilities = [
   {
     title: "Custom Agents",
     description:
-      "เมื่อมีงานใหม่ที่ทำซ้ำ มีข้อมูล และมี decision ชัดเจน ก็สามารถสร้าง agent เฉพาะทางเพิ่มได้",
+      "เมื่อมีงานใหม่ที่ทำซ้ำ มีข้อมูล มี context และมี decision ชัดเจน ก็สามารถสร้าง agent เฉพาะทางเพิ่มได้",
   },
 ];
 
@@ -59,7 +59,8 @@ export function WhyMhoooo() {
           </div>
           <p className="text-lg leading-8 text-ink/66">
             เมื่อ product ใหม่ใช้ memory base เดียวกัน ข้อมูลจากงานหนึ่งจะกลายเป็น
-            วัตถุดิบให้อีกงานหนึ่ง ความเป็นไปได้จึงไม่ได้ถูกจำกัดเป็นแพ็กตายตัว
+            วัตถุดิบให้อีกงานหนึ่ง จึงใช้ได้กับงานหลายแบบ ไม่ใช่เฉพาะร้านค้า
+            หรือระบบแชทเท่านั้น
           </p>
         </div>
 
@@ -83,8 +84,8 @@ export function WhyMhoooo() {
           </p>
           <p className="mt-5 max-w-3xl leading-7 text-porcelain/68">
             เมื่องานแรกใช้งานได้จริง คุณจะเห็นคำถามต่อไปเอง: ช่องทางไหนควรเชื่อมเพิ่ม
-            report ไหนควร automate, content ไหนควรสร้าง และ agent ไหนควรช่วยทีมต่อ
-            นี่คือเหตุผลที่เราใส่ Second Brain ไว้ในทุกระบบตั้งแต่แรก
+            report ไหนควร automate, project ไหนควรมี memory, training ไหนควรเป็น SOP
+            และ agent ไหนควรช่วยทีมต่อ นี่คือเหตุผลที่เราใส่ Second Brain ไว้ในทุกระบบตั้งแต่แรก
           </p>
         </div>
       </div>

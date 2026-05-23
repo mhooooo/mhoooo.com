@@ -15,13 +15,16 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "mhoooo - Second Brain systems สำหรับธุรกิจไทย",
   description:
-    "mhoooo ออกแบบ AI products สำหรับธุรกิจไทย โดยเริ่มจาก workflow จริง และเชื่อมระบบเข้ากับ Second Brain เพื่อให้ข้อมูลลูกค้า งาน และการตัดสินใจนำกลับมาใช้ต่อได้",
+    "mhoooo ออกแบบ AI products สำหรับงานที่มีข้อมูลกระจัดกระจาย การตัดสินใจซ้ำ และ context ที่ไม่ควรหายไป โดยเชื่อมระบบเข้ากับ Second Brain",
   keywords: [
     "Second Brain",
     "AI products",
     "AI automation",
     "business AI",
     "Thai SME",
+    "project memory",
+    "knowledge management",
+    "operations automation",
     "workflow automation",
     "LINE OA",
     "LINE Business Assistant",
